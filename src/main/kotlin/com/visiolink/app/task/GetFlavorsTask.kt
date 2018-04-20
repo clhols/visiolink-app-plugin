@@ -55,7 +55,7 @@ open class GetFlavorsTask : VisiolinkGroupTask() {
         println(result)
     }
 
-    private val androidBasePlugin: BasePlugin?
+    private val androidBasePlugin: BasePlugin<*>?
         get() = (project.plugins.findPlugin("com.android.application") ?:
-                project.plugins.findPlugin("com.android.library")) as BasePlugin?
+                project.plugins.findPlugin("com.android.library")) as BasePlugin<*>?
 }
