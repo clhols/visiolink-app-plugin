@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.2.40"
+    kotlin("jvm") version "1.2.51"
     `maven-publish`
     `java-gradle-plugin`
 }
@@ -7,7 +7,7 @@ plugins {
 dependencies {
     compileOnly(gradleApi())
     implementation("com.android.tools.build:gradle:3.1.1")
-    implementation(kotlin("stdlib", "1.2.40"))
+    implementation(kotlin("stdlib", "1.2.51"))
     implementation("org.json:json:20171018")
 }
 
