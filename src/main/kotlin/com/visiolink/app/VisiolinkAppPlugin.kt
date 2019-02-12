@@ -7,7 +7,7 @@ import com.visiolink.app.task.*
 import org.gradle.api.GradleException
 import org.gradle.api.Project
 import org.gradle.api.Plugin
-import org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension
+import org.gradle.api.plugins.ExtraPropertiesExtension
 import java.io.FileInputStream
 import java.util.*
 
@@ -73,7 +73,7 @@ open class VisiolinkAppPlugin : Plugin<Project> {
             }
         }
 
-        val ext = project.extensions.getByName("ext") as DefaultExtraPropertiesExtension
+        val ext = project.extensions.getByName("ext") as ExtraPropertiesExtension
 
         //Equivalent to project.ext.getVersionCodeTimestamp = { -> }
         ext.set("getVersionCodeTimestamp", closure {
