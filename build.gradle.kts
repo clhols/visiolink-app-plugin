@@ -1,14 +1,14 @@
 plugins {
-    kotlin("jvm") version "1.3.21"
+    kotlin("jvm") version "1.3.41"
     `maven-publish`
     `java-gradle-plugin`
 }
 
 dependencies {
     compileOnly(gradleApi())
-    implementation("com.android.tools.build:gradle:3.2.0")
-    implementation(kotlin("stdlib", "1.3.21"))
-    implementation("org.json:json:20180130")
+    implementation("com.android.tools.build:gradle:3.4.2")
+    implementation(kotlin("stdlib-jdk7", "1.3.41"))
+    implementation("org.json:json:20190722")
 }
 
 repositories {
